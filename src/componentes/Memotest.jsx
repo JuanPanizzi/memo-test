@@ -42,7 +42,7 @@ export const Memotest = ({darkMode, restartMode}) => {
     return (
         <main className=' vw-100' >
             <section className='section-sup col-md-7 col-sm-9 col-10 mx-auto'>
-                <h1>Memo Test</h1>
+                <h1>Memo test</h1>
                 <p>¡Selecciona un cuadro e intenta encontrar otro igual!</p>
             </section>
             <section className='section-inf col-md-7 col-sm-9 col-10  mx-auto '>
