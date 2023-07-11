@@ -1,0 +1,92 @@
+.section-sup {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.section-sup h1 {
+  font-weight: 700;
+}
+.section-sup p {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.section-inf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.ctn-image {
+  width: 65%;
+  padding: 5px;
+  border: 2px solid rgb(75, 72, 72);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease;
+}
+
+.ctn-image:hover {
+  box-shadow: 2px 2px 5px #969696;
+  transform: translateY(-2px);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+.img-clicked {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .section-sup .ctn-image {
+    width: 90%;
+  }
+  .section-sup h1 {
+    font-size: 3rem;
+  }
+  .section-sup p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .ctn-image {
+    width: 70%;
+  }
+  .section-sup h1 {
+    font-size: 2.5rem;
+  }
+  .section-sup p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .ctn-image {
+    width: 75%;
+  }
+  .section-sup {
+    margin-bottom: 40px;
+  }
+  .section-sup h1 {
+    font-size: 2rem;
+  }
+  .section-sup p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=Memotest.css.map */
