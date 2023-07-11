@@ -57,11 +57,14 @@ img {
 }
 
 @media (max-width: 992px) {
+  .section-sup .ctn-image {
+    width: 90%;
+  }
   .section-sup h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .section-sup p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 768px) {
@@ -83,10 +86,10 @@ img {
     margin-bottom: 40px;
   }
   .section-sup h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .section-sup p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 * {
@@ -106,9 +109,23 @@ img {
   height: 100vh;
 }
 .ctn-memotest-dark button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 53px;
   position: absolute;
   top: 15px;
   right: 15px;
+  transition: all 0.1s ease;
+}
+.ctn-memotest-dark button:hover {
+  border-color: #969696;
+  box-shadow: 2px 2px 5px #969696;
+  transform: translateY(-2px);
+}
+.ctn-memotest-dark button img {
+  width: 100%;
 }
 
 .ctn-memotest-light {
@@ -122,10 +139,44 @@ img {
   height: 100vh;
 }
 .ctn-memotest-light button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 53px;
   position: absolute;
   top: 15px;
   right: 15px;
+  transition: all 0.1s ease;
+}
+.ctn-memotest-light button:hover {
+  border-color: #969696;
+  box-shadow: 2px 2px 5px #969696;
+  transform: translateY(-2px);
 }
 .ctn-memotest-light button img {
   width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .ctn-memotest-light button, .ctn-memotest-dark button {
+    width: 62px;
+    height: 43px;
+  }
+}
+@media (max-width: 768px) {
+  .ctn-memotest-light button, .ctn-memotest-dark button {
+    width: 56px;
+    height: 37px;
+  }
+}
+@media (max-width: 576px) {
+  .ctn-memotest-light button, .ctn-memotest-dark button {
+    width: 51px;
+    height: 32px;
+    position: absolute;
+    top: 95%;
+    right: 15px;
+  }
 }/*# sourceMappingURL=App.css.map */

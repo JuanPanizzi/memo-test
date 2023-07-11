@@ -5,7 +5,7 @@ import signo from '../imagenes/signo.png';
 import confetti from 'canvas-confetti';
 
 
-export const Memotest = () => {
+export const Memotest = ({darkMode, restartMode}) => {
 
     const [guessed, setGuessed] = useState([])
     const [selected, setSelected] = useState([])
@@ -16,9 +16,7 @@ export const Memotest = () => {
         if (selected.length == 2) {
 
             if (selected[0].split('|')[1] == selected[1].split('|')[1]) {
-
                 setGuessed(guessed => guessed.concat(selected));
-
             }
 
             setTimeout(() => {
@@ -32,9 +30,9 @@ export const Memotest = () => {
         if (guessed.length == images.length) {
             confetti()
             alert("¡GANASTE!")
-
             setTimeout(() => {
-                location.reload()
+                setSelected([]);
+                setGuessed([])
             }, 2000);
         }
 
@@ -43,11 +41,11 @@ export const Memotest = () => {
 
     return (
         <main className=' vw-100' >
-            <section className='section-sup col-md-7 col-sm-11'>
-                <h1 >Memo test</h1>
+            <section className='section-sup col-md-7 col-sm-9 col-10 mx-auto'>
+                <h1>Memo test</h1>
                 <p>¡Selecciona un cuadro e intenta encontrar otro igual!</p>
             </section>
-            <section className='section-inf col-md-7 col-sm-9  mx-auto '>
+            <section className='section-inf col-md-7 col-sm-9 col-10  mx-auto '>
                 {images.map((image) => {
                     let [, url] = image.split('|')
                     return (
